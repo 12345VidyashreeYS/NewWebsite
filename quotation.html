@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-image: url("images/QBackgroundImage.png");
+            background-attachment: fixed;
+        }
+
+        #p2{
+            margin-left: 180px;
+            color:orange;
+        }
+
+        #h1{
+            color:#497faf;
+            font-family: sans-serif;
+            /* text-align: center; */
+            font-size: 30px;
+            line-height:1px;
+            margin-left:180px;
+        }
+
+        #p1{
+            color:#34424e;
+            /* text-align: center; */
+            font-family: sans-serif;
+            font-size: 12px;
+            margin-left: 180px;
+        }
+
+        .form1{
+            background-color:#c4def5;
+            height: 615px;
+            width: 800px;
+            border:2px solid #497faf;
+            border-radius: 20px;
+            justify-content: center;
+            margin-left: 40px;
+        }
+
+        #OneForm{
+            margin: 30px 30px 30px 30px;
+        }
+
+        #TwoForm{
+            margin: 30px 30px 30px 30px;
+        }
+
+        #ThreeForm{
+            margin: 30px 30px 30px 30px;
+        }
+
+        #FourForm{
+            margin: 30px 30px 30px 30px;
+        }
+        
+        #one{
+            margin-right: 180px;
+        }
+
+        #three{
+            margin-right: 144px;
+        }
+
+        #five{
+            margin-right: 280px;
+        }
+
+        #seven{
+            margin-right: 210px;
+        }
+
+        #nine{
+            margin-right: 40px;
+        }
+
+        #eleven{
+            margin-right: 20px;
+        }
+
+        button{
+            color: white;
+            background-color: orange;
+            border: 1px solid orange;
+            border-radius: 10px;
+            padding: 7px 15px;
+            margin-left: 300px;
+            margin-bottom: 20px;
+        }
+
+        button:hover{
+            background-color: darkorange;
+        }
+
+        .quotelayout{
+            display: flex;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            max-width: 1250px;
+            margin: 30px auto;
+            padding: 0 20px;
+            align-items: start;
+            }
+
+            .Quote-side{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .sidebarImage,
+            .sidebar,
+            .ContactCard{
+                background-color: #c4def5;
+                border: 2px solid #497faf;
+                border-radius: 20px;
+                padding: 20px;
+            }
+
+            .sidebarImage{
+                padding: 10px;
+            }
+
+            .sidebarImage img{
+                width: 300px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+
+            .sidebar{
+                padding: 20px;
+            }
+
+            .sidebar h2,
+            .ContactCard h2{
+                margin-top: 0;
+                color: black;
+            }
+
+            .ContactCard{
+                padding: 20px;
+                margin-top: -9px;
+            }
+
+            #p3{
+                color: #000000;
+                font-size: 13px;
+                line-height: 7px;
+            }
+
+            #p4{
+                color: black;
+                font-size: 13px;
+                line-height: 15px;
+            }
+
+            #htwo{
+                margin-top: 10px;
+            }
+
+            #hthree{
+                margin-top: -10px;
+                margin-bottom: -5px;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <p id="p2">&mdash;&mdash; Get a quotation</p>
+    <h2 id="h1">Request a Quote</h2>
+    <p id="p1">Tell us your requirement for RCC Hume Pipes.<br> Our team will contact you with the best price and availability.
+    </p>
+
+    <!-- <center> -->
+<div class="quotelayout">
+    <div class="form1">
+
+        <form>
+
+            <!-- <div class="Oneform"></div> -->
+
+                <fieldset id="OneForm">
+            
+                        <legend><b>Customer Details</b></legend>
+        
+                            Full Name: <input id="one" type="text" name="Name" placeholder="👤 Full Name" required>
+
+                            Phone Number: <input id="two" type="text" name="Phone Number" placeholder="📞 Phone Number" required>
+                            
+                            <br><br>
+
+                            Company Name: <input id="three" type="text" name="Company Name" placeholder="🏢 Company Name" required>
+                            Email Address: <input id="four" type="email" name="Email Address" placeholder="✉ Email Address" required>
+  
+                </fieldset>
+
+            <!-- </div> -->
+
+            <!-- <div class="Twoform"> -->
+
+                <fieldset id="TwoForm">
+            
+                        <legend><b>Pipe Requirements</b></legend>
+        
+                            Pipe Diameter:
+                            <select id="five">
+                                <option>150mm</option>
+                                <option>250mm</option>
+                                <option>300mm</option>
+                                <option>400mm</option>
+                                <option>450mm</option>
+                                <option>600mm</option>
+                            
+                            </select>
+
+                            Pipe Class:
+                            <select id="six" required>
+
+                                <option>Np2</option>
+                                <option>Np3</option>                            
+                            </select>
+
+                            <br><br>
+
+                            Quantity: <input id="seven" type="number" name="Quantity" placeholder="Enter Quantity" required>
+
+                            Pipe Type:
+                            <select id="eight" required>
+
+                                <option>S & S</option>
+                                <option>Socket</option>                            
+                            </select>
+  
+                </fieldset>
+
+                <fieldset id="ThreeForm">
+            
+                        <legend><b>Delivery or Self-Pickup</b></legend>
+        
+                            How would you like to recieve the pipes?
+                            <select id="nine" required>
+                                <option>Company Delivery</option>
+                                <option>Self Delivery</option>
+                            </select>
+
+                            Required Date: <input id="ten" type="date" name="Date">
+
+                            <br><br>
+
+                             Delivery Address / Pickup Details: <textarea id="eleven" placeholder="📌 Enter delivery location or pickup details"></textarea>
+
+                        </fieldset>
+
+                        <fieldset id="FourForm">
+            
+                        <legend><b>Additional Information</b></legend>
+        
+                            Message: <textarea id="twelve" placeholder="📄 Tell us about any additional requirements"></textarea>
+
+                        </fieldset>
+
+                        <button>➤ Submit Quote Request &rarr;</button>
+
+            <!-- </div> -->
+
+            
+        </form>
+
+</div>
+    <!-- </center> -->
+
+<aside class="Quote-side">
+
+    <div class="sidebarImage">
+        
+        <img src="images/450mm.png" alt="450mm Pipe">
+
+        <h2 id="htwo">Why Choose Us?</h2>
+
+            <p id="p3">High quality RCC Hume Pipes</p>
+            <p id="p3">Multiple sizes and classes available</p>
+            <p id="p3">Company delivery or self-pickup</p>
+            <p id="p3">Reliable and trusted partner</p>
+
+        </div>
+
+        <!-- <div class="sidebar">
+            
+            <h2>Why Choose Us?</h2>
+
+            <p>High quality RCC Hume Pipes</p>
+            <p>Multiple sizes and classes available</p>
+            <p>Company delivery or self-pickup</p>
+            <p>Reliable and trusted partner</p>
+
+        </div> -->
+
+        <div class="ContactCard">
+
+            <h2 id="hthree">Need Help?</h2>
+            <p id="p4">☎ &#160;+91 7349023669 <br>&#160;&#160;&#160;&#160;&#160; Call us for quick assistance</p>
+            <p id="p4">💬 +91 7349023669 <br>&#160;&#160;&#160;&#160;&#160; Chat on Whatsapp</p>
+            <p id="p4">✉ &#160;vidyashreeys462@gmail.com <br>&#160;&#160;&#160;&#160;&#160&#160;Email us</p>
+            <p id="p4">📍 Bannerghatta, Banglore <br>&#160;&#160;&#160;&#160;&#160; Visit our warehouse</p>
+        </div>
+
+</aside>
+
+</div>
+</body>
+</html>
